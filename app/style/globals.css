@@ -1,7 +1,15 @@
-.col {
-    border: "1px black solid";
-}
+
 
 .heroIMG {
-    object-fit: "contain";
+    object-fit: cover;
+    height: 100vh;
+}
+
+.nooverflow {
+    overflow: unset;
+}
+
+.positionTop {
+    position: sticky;
+    top: 20px;
 }
