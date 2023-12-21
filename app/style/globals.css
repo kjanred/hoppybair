@@ -1,0 +1,7 @@
+.col {
+    border: "1px black solid";
+}
+
+.heroIMG {
+    object-fit: "contain";
+}

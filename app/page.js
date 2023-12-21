@@ -1,95 +1,77 @@
 import Image from 'next/image'
-import styles from './page.module.css'
+import { tarrgetFont } from './font/font';
 
 export default function Home() {
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
+    <div className="container-fluid">
+      <div className='row'>
+        <div className='col'>
+        <Image 
+            src='/img/hero.jpg'
+            fill={true}
+            alt='hero'
             />
-          </a>
         </div>
       </div>
+      <div className="row landing">
+        <div className="col-12">
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+          {/* -----NAV BAR BEGINS ------*/}
+        <nav className={`${tarrgetFont.className} navbar navbar-expand-lg bg-body-tertiar sticky-top`}>
+  <div className="container-fluid">
+              <a className="navbar-brand" href="#">
+                <Image
+                  src='/img/logo.png'
+                  width={100}
+                  height={100}
+                  alt="logo"
+                  className='heroIMG'
+                />
+    </a>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul className="navbar-nav">
+        <li className="nav-item">
+          <a className="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">Features</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">Pricing</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+        </div>
+    </div>
+    <div className="row welcome">
+        <div className="col-md-6"><h1 className="text-danger">Hello Bootstrap</h1></div>
+        <div className="col-md-6"><p>Here is some basic information text.</p></div>
+    </div>
+    <div className="row events">
+        <div className="col-md-5"></div>
+        <div className="col-md-7"></div>
+    </div>
+    <div className="row links">
+        <div className="col-md-6 col-xl-3"></div>
+        <div className="col-md-6 col-xl-3"></div>
+        <div className="col-md-6 col-xl-3"></div>
+        <div className="col-md-6 col-xl-3"></div>
+    </div>
+    <div className="row footer">
+        <div className="col-md-6"></div>
+        <div className="col-md-6"></div>
+    </div>
+</div>
   )
 }
+
+
