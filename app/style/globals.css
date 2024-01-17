@@ -1,3 +1,6 @@
+.main-container{
+    background-color: rgb(7, 30, 18);
+}
 
 
 .heroIMG {
@@ -5,11 +8,24 @@
     height: 100vh;
 }
 
-.nooverflow {
-    overflow: unset;
-}
 
 .positionTop {
     position: sticky;
     top: 20px;
+}
+
+nav {
+    background-color: #f6e9dd;
+}
+
+.introP {
+    font-size: 2em;
+}
+
+.homeCard {
+    background: radial-gradient(circle at 75% 75%,  #e6d8cf, #dfc7b3);
+}
+
+#introh1 {
+    font-size: 3em;
 }
