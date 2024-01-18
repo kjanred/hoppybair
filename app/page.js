@@ -5,8 +5,9 @@ import { tarrgetFont } from './font/font';
 
 export default function Home() {
 
+
   return (
-    <div className="container-fluid main-container">
+    <div className="container-fluid p-0 main-container">
       <div className='row'>
         <div className='col heroIMG'>
           <Image 
@@ -23,7 +24,7 @@ export default function Home() {
     
     <div className="row p-2">
         <div className="col-md-2"><br /></div>
-        <div id="introh1" className="col-md-4 text-center justify-content-center homeCard"><h1 className={`${tarrgetFont.className} text-danger`}>HoppyBair</h1>
+        <div id="introh1" className="col-md-4 text-center justify-content-center homeCard"><h1 className={`${tarrgetFont.className} text-danger`}>Hoppy Bairs</h1>
           <Image 
             src="/img/controller.jpg"
             height={200}
