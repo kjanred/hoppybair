@@ -17,3 +17,21 @@ export const tarrgetFont = localFont({
     ]
 
 });
+
+export const coolveticaFont = localFont({
+    src: [
+        {
+            path: './coolveticaWeb2.woff2',
+            weight: '400'
+        },
+        {
+            path: './coolveticaWeb.woff',
+            weight: '400'
+        },
+        {
+            path: './coolvetica.ttf',
+            weight: '400'
+        }
+    ]
+
+});
