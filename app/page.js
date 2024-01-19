@@ -2,7 +2,6 @@ import Image from 'next/image'
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import { tarrgetFont } from './font/font';
-import { coolveticaFont } from './font/font';
 
 export default function Home() {
 
@@ -33,7 +32,7 @@ export default function Home() {
             alt="weed controller"
           />
         </div>
-        <div className="col-md-4 my-3 my-md-0 p-2 homeCard"><p className={`${coolveticaFont.className} introP`}>Hoppy Bairs is a team of Super Smash Bros. Ultimate players and tournament organizers based in the Santa Rosa, CA area and specialize in hosting fun tournaments with both the competitive Smash player and the first-timer in mind. We love playing Smash, supporting our community, and drinking good beer! Our founder, Rodolfo "SR-SOUL" Zarate has been hosting smash tournaments all around Sonoma County and has been visiting breweries up and down California and beyond! Come visit one of our tournements at the venues listed below and we will show you a good time.</p>
+        <div className="col-md-4 my-3 my-md-0 p-2 homeCard"><p className="introP">Hoppy Bairs is a team of Super Smash Bros. Ultimate players and tournament organizers based in the Santa Rosa, CA area. We specialize in hosting fun tournaments with both the competitive Smash player and the first-timer in mind. Our team loves playing Smash, supporting our community, and drinking good beer, and our founder Rodolfo "SR-SOUL" Zarate has been hosting smash tournaments all around Sonoma County for about a decade now. He and the team have also been visiting breweries up and down California and beyond! Come visit one of our tournements at our partner venues.</p>
         </div>
         <div className="col-md-2"><br /></div>
     </div>
@@ -50,15 +49,55 @@ export default function Home() {
           /> </div>
         <div className="col-md-2"><br /></div>
     </div>
-    <div className="row links">
-        <div className="col-md-6 col-xl-3"></div>
-        <div className="col-md-6 col-xl-3"></div>
-        <div className="col-md-6 col-xl-3"></div>
-        <div className="col-md-6 col-xl-3"></div>
+    <div className="row p-2 links">
+        <div className="col-md-2"><br /></div>
+        <div className="col-md-8 homeCard">
+
+          <div className="container">
+            <div className="row">
+              <div className="col-12 col-md-6 col-xl-4 venueCard">
+                <h3 className="">HenHouse: Santa Rosa</h3>
+                <Image
+                  src="/img/venue/henhouse-sr.jpg"
+                  height={200}
+                  width={300}
+                  alt="HenHouse, Santa Rosa"
+                />
+                <p>322 Bellevue Ave <br /> Santa Rosa, CA 95407</p>
+              </div>
+              
+              <div className="col-12 col-md-6 col-xl-4 venueCard">
+                <h3>HenHouse: Petaluma</h3>
+                <Image
+                  src="/img/venue/henhouse-petaluma.jpg"
+                  height={200}
+                  width={300}
+                  alt="HenHouse, Petaluma"
+                />
+                <p>1333 N McDowell Blvd <br /> Petaluma, CA 94954</p>
+              </div>
+
+              <div className="col-12 col-md-6 col-xl-4 venueCard">
+                <h3>Flagship: Windsor</h3>
+                <Image
+                  src="/img/venue/flagship-windsor.jpg"
+                  height={200}
+                  width={300}
+                  alt="Flagship, Windsor"
+                />
+                <p>1001 McClelland Dr <br /> Windsor, CA 95492</p>
+              </div>
+            </div>
+
+          </div>{/*--- END OF CONTAINER --*/}
+
+
+        </div>
+        <div className="col-md-2"><br /></div>
     </div>
-    <div className="row footer">
+    
         <Footer />
-    </div>
+    
 </div>
   )
 }
