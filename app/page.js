@@ -32,7 +32,7 @@ export default function Home() {
             alt="weed controller"
           />
         </div>
-        <div className="col-md-4 my-3 my-md-0 p-2 homeCard"><p className="introP">Hoppy Bairs is a team of Super Smash Bros. Ultimate players and tournament organizers based in the Santa Rosa, CA area. We specialize in hosting fun tournaments with both the competitive Smash player and the first-timer in mind. Our team loves playing Smash, supporting our community, and drinking good beer, and our founder Rodolfo "SR-SOUL" Zarate has been hosting smash tournaments all around Sonoma County for about a decade now. He and the team have also been visiting breweries up and down California and beyond! Come visit one of our tournements at our partner venues.</p>
+        <div className="col-md-4 my-3 my-md-0 p-2 homeCard"><p className="introP">Hoppy Bairs is a team of Super Smash Bros. Ultimate players and tournament organizers based in the Santa Rosa, CA area. We specialize in hosting fun tournaments with both the competitive Smash player and the first-timer in mind. Our team loves playing Smash, supporting our community, and drinking good beer, and our founder Rodolfo `&quot;`SR-SOUL`&quot;` Zarate has been hosting smash tournaments all around Sonoma County for about a decade now. He and the team have also been visiting breweries up and down California and beyond! Come visit one of our tournements at our partner venues.</p>
         </div>
         <div className="col-md-2"><br /></div>
     </div>

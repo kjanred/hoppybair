@@ -17,6 +17,7 @@
 
 nav {
     background-color: #f6e9dd80;
+    backdrop-filter: blur(5px);
 }
 
 .introP {
