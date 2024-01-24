@@ -24,7 +24,7 @@ export default function Home() {
     
     <div className="row p-2">
         <div className="col-md-2"><br /></div>
-        <div id="introh1" className="col-md-4 my-3 my-md-0 p-2 text-center justify-content-center homeCard"><h1 className={`${tarrgetFont.className} text-danger`}>Hoppy Bairs</h1>
+        <div id="introh1" className="col-md-4 my-3 my-md-0 p-2 text-center homeCard"><h1 className={`${tarrgetFont.className} text-start ps-2 introH1`}>Hoppy Bairs</h1>
           <Image 
             src="/img/controller.jpg"
             height={200}
@@ -32,15 +32,16 @@ export default function Home() {
             alt="weed controller"
           />
         </div>
-        <div className="col-md-4 my-3 my-md-0 p-2 homeCard"><p className="introP">Hoppy Bairs is a team of Super Smash Bros. Ultimate players and tournament organizers based in the Santa Rosa, CA area. We specialize in hosting fun tournaments with both the competitive Smash player and the first-timer in mind. Our team loves playing Smash, supporting our community, and drinking good beer, and our founder Rodolfo `&quot;`SR-SOUL`&quot;` Zarate has been hosting smash tournaments all around Sonoma County for about a decade now. He and the team have also been visiting breweries up and down California and beyond! Come visit one of our tournements at our partner venues.</p>
+        <div className="col-md-4 my-3 my-md-0 p-2 d-flex align-items-center homeCard"><p className="introP">Hoppy Bairs is a team of Super Smash Bros. Ultimate players and tournament organizers based in the Santa Rosa, CA area. We specialize in hosting fun tournaments with both the competitive Smash player and the first-timer in mind. Our team loves playing Smash, supporting our community, and drinking good beer, and our founder Rodolfo `&quot;`SR-SOUL`&quot;` Zarate has been hosting smash tournaments all around Sonoma County for about a decade now. He and the team have also been visiting breweries up and down California and beyond! Come visit one of our tournements at our partner venues.</p>
         </div>
         <div className="col-md-2"><br /></div>
     </div>
       
     <div className="row events p-2">
         <div className="col-md-2"><br /></div>
-        <div className="col-md-4 p-2 my-3 my-md-0 homeCard"><p>Our next event is: <span className="fs-1">01/03/23 6:00pm</span><br />at <span className="fs-1">Hen House Santa Rosa</span></p> </div>
-        <div className="col-md-4 p-2 my-3 my-md-0 homeCard">
+
+        <div className="col-md-4 p-5 my-3 my-md-0 homeCard d-flex justify-content-center align-items-center"><p className='nextEvent'>Our next event is: <span className="fs-1">01/03/23 6:00pm</span><br />at <span className="fs-1">Hen House Santa Rosa</span></p> </div>
+        <div className="col-md-4 p-5 my-3 my-md-0 homeCard d-flex justify-content-center align-items-center">
           <Image
             src="/img/henhouse.png"
             height={200}
