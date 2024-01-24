@@ -16,8 +16,19 @@
 }
 
 nav {
-    background: linear-gradient(#0b2d1c80 0%, #263a1e80 25% 75%, #0b2d1c80 100%);
-    backdrop-filter: blur(5px);
+    /* background: linear-gradient(#0b2d1c80 0%, #263a1e80 25% 75%, #0b2d1c80 100%); */
+    background-color: #2bb673a8;
+    backdrop-filter: blur(7px);
+
+}
+
+.nav-link, .nav-link:link, .nav-link:visited, .nav-link:active  {
+color: #f6e9dd;
+font-size:1.3em;
+}
+
+.nav-link:hover{
+    color:black;
 }
 
 .introH1 {
