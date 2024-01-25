@@ -22,7 +22,8 @@ export default function Home() {
 
     
       <Navigation />
-    
+      {/* CHILDREN WILL GO HERE */}
+      
     <div className="row p-2">
         <div className="col-md-2"><br /></div>
         <div id="introh1" className="col-md-4 my-3 my-md-0 p-2 text-center homeCard"><h1 className={`${tarrgetFont.className} text-start ps-2 introH1`}>Hoppy Bairs</h1>
@@ -86,13 +87,14 @@ export default function Home() {
               </div>
             </div>
 
-          </div>{/*--- END OF CONTAINER --*/}
+          </div>{/*--- END OF VENUE CONTAINER --*/}
 
 
         </div>
         <div className="col-md-2"><br /></div>
     </div>
     
+         {/* CHILDREN WILL END HERE */}
         <Footer />
     
 </div>

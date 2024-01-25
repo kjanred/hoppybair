@@ -10,19 +10,28 @@ export default function Footer() {
             <div className='col-1'><br /></div>
             <div className={`${styles.div} col-10 text-center`}>
                 <div className='container-fluid'><div className='row'>
-                <div className='col-4 col-md my-2'>
+                        <div className='col-4 col-md my-2'>
+                            <Link
+                            href="https://twitter.com/HoppyBair"
+                            target="_blank">
                     <Image
                         src='/img/footer/x.png'
                         width={35}
                         height={35}
-                        alt='X (formerly known as Twitter) logo' />
+                                    alt='X (formerly known as Twitter) logo' />
+                                </Link>
                 </div>
-                <div className='col-4 col-md my-2'>
+                    <div className='col-4 col-md my-2'>
+                    <Link
+                        href="https://www.instagram.com/hoppy_bair_esports"
+                        target="_blank">
                      <Image
                         src='/img/footer/insta.png'
                         width={35}
                         height={35}
                         alt='Instagram logo' />
+                                </Link>
+                                
                 </div>
                 <div className='col-4 col-md my-2'>
                     <Image
