@@ -4,8 +4,13 @@ import HomeCarousel from './components/HomeCarousel';
 import Footer from './components/Footer';
 import { tarrgetFont } from './font/font';
 
-export default function Home() {
+export const metadata = {
+  title: 'Home Page',
+  description: 'Hoppy Bairs Home'
+}
+ 
 
+export default function Home() {
 
   return (
     <>
@@ -81,6 +86,6 @@ export default function Home() {
       
     </>  
   )
-}
+};
 
 

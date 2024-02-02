@@ -7,11 +7,7 @@ export default function Events() {
 
 
   return (
-    <div className="container-fluid p-0 main-container">
-
-    
-      <Navigation />
-    
+  <>
     <div className="row p-2">
         <div className="col-md-2"><br /></div>
               <div id="introh1" className="col-md-8 my-3 my-md-0 p-2 text-center homeCard"><h1 className={`${tarrgetFont.className} text-start ps-2 introH1`}>Next Event: </h1>
@@ -34,10 +30,8 @@ export default function Events() {
           /> </div>
         <div className="col-md-2"><br /></div>
     </div>
+    </>
     
-        <Footer />
-    
-</div>
   )
 }
 
