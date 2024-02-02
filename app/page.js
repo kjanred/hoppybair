@@ -5,8 +5,8 @@ import Footer from './components/Footer';
 import { tarrgetFont } from './font/font';
 
 export const metadata = {
-  title: 'Home Page',
-  description: 'Hoppy Bairs Home'
+  title: 'Home | HB',
+  description: 'Home page of the Hoppy Bair website. Please check out our Super Smash Bros Ultimate tournaments in the Sonoma County area.'
 }
  
 
