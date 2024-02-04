@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { tarrgetFont } from '../font/font';
+import logo from '@/public/img/logosm.png'
 
 export default function Navigation() {
     return (
@@ -8,9 +9,8 @@ export default function Navigation() {
         <div className="container">
                     <Link className="navbar-brand" href="/">
                       <Image
-                        src='/img/logo.png'
-                        width={100}
-                        height={100}
+                        src={logo}
+                        quality={100}
                         alt="logo"
                       />
           </Link>
@@ -26,16 +26,16 @@ export default function Navigation() {
                 <Link className="nav-link" href="/events">Events</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">About</a>
+                <a className="nav-link" href="/about">About</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Members</a>
+                <a className="nav-link" href="/members">Members</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Blog</a>
+                <a className="nav-link" href="/blog">Blog</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Friends</a>
+                <a className="nav-link" href="/friends">Friends</a>
               </li>
             </ul>
           </div>

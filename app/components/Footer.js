@@ -23,7 +23,7 @@ export default function Footer() {
                 </div>
                     <div className='col-4 col-md my-2'>
                     <Link
-                        href="https://www.instagram.com/hoppy_bair_esports-+"
+                        href="https://www.instagram.com/hoppy_bair_esports"
                         target="_blank">
                      <Image
                         src='/img/footer/insta.png'

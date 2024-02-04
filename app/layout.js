@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 import BootstrapClient from './components/BootstrapClient';
 import { coolveticaFont } from './font/font';
 import { usePathname } from 'next/navigation';
-
+import heroimg from '@/public/img/hero.jpg'
 
 export default function RootLayout({ children }) {
 
@@ -23,7 +23,8 @@ export default function RootLayout({ children }) {
               <div className='col heroIMG'>
                 <Image
                   className='position-relative heroIMG'
-                  src='/img/hero.jpg'
+                  src={heroimg}
+                  quality={100}
                   fill
                   alt='hero'
                 />

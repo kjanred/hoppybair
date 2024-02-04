@@ -1,7 +1,5 @@
 import Image from 'next/image'
-import Navigation from './components/Navigation';
 import HomeCarousel from './components/HomeCarousel';
-import Footer from './components/Footer';
 import { tarrgetFont } from './font/font';
 
 export const metadata = {

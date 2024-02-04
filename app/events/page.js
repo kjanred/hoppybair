@@ -1,7 +1,6 @@
 import Image from 'next/image';
-import Navigation from '../components/Navigation';
-import Footer from '../components/Footer';
 import { tarrgetFont } from '../font/font';
+import resultsGraphic from '@/public/res-placeholder.png'
 
 export const metadata = {
   title: 'Events | HB',
@@ -86,12 +85,10 @@ export default function Events() {
       
       <div className="row p-2">
         <div className="col-md-2"><br /></div>
-        <div className="col-md-8 my-3 my-md-0 p-5 text-center homeCard" style={imageContainer}>
+        <div className="col-md-8 my-3 my-md-0 p-5 text-center homeCard">
 
           <Image
-            src='/res-placeholder.png'
-            fill={true}
-            style={imageStyle}
+            src={resultsGraphic}
             alt="results graphic"
           />
 
