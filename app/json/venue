@@ -1,0 +1,27 @@
+[
+    {
+        "name": "HenHouse: Santa Rosa",
+        "imgName": "henhouse-sr.jpg",
+        "address1": "322 Belvue Ave",
+        "address2": "Santa Rosa, CA 95407",
+        "alt": "HenHouse, Santa Rosa",
+        "id": "1"
+    },
+    {
+        "name": "HenHouse: Petaluma",
+        "imgName": "henhouse-petaluma.jpg",
+        "address1": "1333 N McDowell Blvd",
+        "address2": "Petaluma, CA 94954",
+        "alt": "HenHouse, Petaluma",
+        "id": "2"
+    },
+    {
+        "name": "Flagship: Windsor",
+        "imgName": "fagship-windsor.jpg",
+        "address1": "1001 McClelland Dr",
+        "address2": "Windsor, CA 95492",
+        "alt": "Flagship, Windsor",
+        "id": "3"
+    }
+]
+
