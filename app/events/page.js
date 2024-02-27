@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { tarrgetFont } from '../font/font';
 import resultsGraphic from '@/public/res-placeholder.png'
+import ResultsAccordian from '../components/ResultsAccordian';
 
 export const metadata = {
   title: 'Events | HB',
@@ -8,12 +9,12 @@ export const metadata = {
 }
  
 const imageContainer = {
-  position: 'relative',
-  overflow: 'hidden'
+  position: 'relative'
 }
 
 const imageStyle = {
-  objectFit: 'contain'
+  width: '100%',
+  height: 'auto'
 }
 
 export default function Events() {
@@ -50,33 +51,13 @@ export default function Events() {
 
         <div className="col-md-8 my-3 my-md-0 p-5 text-center homeCard">
           
-        <div className='container'>
-            <div className='row'>
-
-              <div className='col-md-6'>
         
-              <Image
-            src="/cal-placeholder.png"
-            height={200}
-            width={300}
-            alt="Calendar"
-                />
-
-              </div>
-              <div className='col-md-6 text-start'>
-              <table className='eventTable'>
-                  <tr><th><p>MON</p></th><td><p>Iron Ox<br />4:00pm</p></td></tr> 
-                  <tr><th><p>TUE</p></th><td></td></tr> 
-                  <tr><th><p>WED</p></th><td><p>Flagship: Windsor<br />5:00pm</p></td></tr> 
-                  <tr><th><p>THUR</p></th><td></td></tr> 
-                  <tr><th><p>FRI</p></th><td></td></tr> 
-                  <tr><th><p>SAT</p></th><td><p>HenHouse: Santa Rosa<br />5:00pm</p></td></tr> 
-                  <tr><th><p>SUN</p></th><td><p>HenHouse: Petaluma<br />5:00pm</p></td></tr> 
+              <table className='table table-bordered'>
+                  <thead><tr><th>MON</th><th>TUE</th><th>WED</th><th>THUR</th><th>FRI</th><th>SAT</th><th>SUN</th></tr></thead>
+                  <tbody><tr><td>Iron Ox<br />4:00pm</td> <td></td><td>Flagship<br /> 5:00pm</td><td></td><td></td><td>HH: Santa Rosa<br />5:00pm</td><td>HH: Petaluma<br />5:00pm</td></tr></tbody>
                 </table>
               
-                </div>
-              </div>
-          </div>
+                
         
         </div>
 
@@ -90,8 +71,19 @@ export default function Events() {
           <Image
             src={resultsGraphic}
             alt="results graphic"
+            style={imageStyle}
           />
 
+        </div>
+        <div className="col-md-2"><br /></div>
+      </div>
+      
+      <div className="row p-2">
+        <div className="col-md-2"><br /></div>
+        <div className="col-md-8 my-3 my-md-0 p-5 text-center homeCard">
+
+        <ResultsAccordian />
+          
         </div>
         <div className="col-md-2"><br /></div>
     </div>
