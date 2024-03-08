@@ -8,9 +8,6 @@ export const metadata = {
   description: 'Welcome to the Events page. Here you can find information about our next event, our schedule of future events, and the results of past events and past results graphics.'
 }
  
-const imageContainer = {
-  position: 'relative'
-}
 
 const imageStyle = {
   width: '100%',

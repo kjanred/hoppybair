@@ -69,11 +69,34 @@ export default function ResultsAccordian() {
   <div className="accordion-item">
     <h2 className="accordion-header">
       <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-        Accordion Item #3
+        HenHouse Rumble #6
       </button>
     </h2>
     <div id="collapse1" className="accordion-collapse collapse" data-bs-parent="#tourneyDataCollapse">
-      <div className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            <div className="accordion-body">
+
+            <table className="table table-dark table-striped table-hover">
+                    <thead>
+                        <tr><th scope="col">Place</th><th scope="col">Player</th><th scope="col">Character</th><th scope="col">Win / Loss</th><th scope="col">Defeated By</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><th scope="row">1</th><td>Bandit</td><td>Lucina</td><td>4:1</td><td>dreamlamb</td></tr>
+                        <tr><th scope="row">2</th><td>dreamlamb</td><td>Mii Brawler</td><td>4:2</td><td>Bandit<br/>Bandit</td></tr>
+                        <tr><th scope="row">3</th><td>OnlyHalf</td><td>Incineroar</td><td>4:2</td><td>steb<br/>dreamlamb</td></tr>
+                        <tr><th scope="row">4</th><td>tax fraud</td><td>Incineroar</td><td>3:2</td><td>dreamlamb<br />OnlyHalf</td></tr>
+                        <tr><th scope="row">5</th><td>SR-SOUL</td><td>Mario</td><td>2:2</td><td>steb<br />tax fraud</td></tr>
+                        <tr><th scope="row">5</th><td>steb</td><td>Snake</td><td>2:2</td><td>Bandit<br />OnlyHalf</td></tr>
+                        <tr><th scope="row">7</th><td>Chrisoc</td><td>Joker</td><td>2:2</td><td>Bandit<br />SR-SOUL</td></tr>
+                        <tr><th scope="row">7</th><td>LAN</td><td>Snake</td><td>2:2</td><td>dreamlamb<br />OnlyHalf</td></tr>
+                        <tr><th scope="row">9</th><td>Alfie</td><td>Piranha Plant</td><td>0:2</td><td>tax fraud<br />OnlyHalf</td></tr>
+                        <tr><th scope="row">9</th><td>Shor</td><td>DDD</td><td>0:2</td><td>LAN<br />Chrisoc</td></tr>
+                        <tr><th scope="row">9</th><td>Sacred Johnnie</td><td>Cloud</td><td>0:2</td><td>tax fraud<br />SR-SOUL</td></tr>
+                        <tr><th scope="row">9</th><td>Chozen</td><td>Zero Suit</td><td>0:2</td><td>Chrisoc<br />LAN</td></tr>
+                    </tbody>
+                  </table>
+              
+              
+      </div>
     </div>
   </div>
 </div>
