@@ -48,8 +48,8 @@ export default function Events() {
 
         <div className="col-md-8 my-3 my-md-0 p-5 text-center homeCard">
           
-        
-              <table className='table table-bordered'>
+        <p>Our weekly schedule currently looks like this. Click each location for more information.</p>
+          <table className='table table-bordered'>
                   <thead><tr><th>MON</th><th>TUE</th><th>WED</th><th>THUR</th><th>FRI</th><th>SAT</th><th>SUN</th></tr></thead>
                   <tbody><tr><td>Iron Ox<br />4:00pm</td> <td></td><td>Flagship<br /> 5:00pm</td><td></td><td></td><td>HH: Santa Rosa<br />5:00pm</td><td>HH: Petaluma<br />5:00pm</td></tr></tbody>
                 </table>
