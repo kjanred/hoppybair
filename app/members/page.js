@@ -38,17 +38,14 @@ export default function Members() {
               
               <div className='col-7 p-3'>
                 <h3><span className={tarrgetFont.className}>Founder:</span> Rodolfo Zarate</h3>
-                <p id='founderParagraph'>
+                
                 <Image
                   src={rudy}
                   alt='Rodolfo Zarate'
                   quality={100}  
                   style={founderStyle}
                 />
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue varius lorem, et dignissim nibh euismod nec. Sed nec arcu aliquet, ultrices elit eu, tincidunt sem. Nunc id quam ut turpis ullamcorper varius. Sed erat ex, venenatis quis pulvinar eget, fermentum id augue. Proin semper non felis eu ultrices. Vivamus fringilla gravida ipsum at condimentum. Curabitur a tortor at tortor dapibus laoreet.
-
-Cras luctus quam sed odio volutpat gravida. Fusce sagittis nisi sit amet arcu rutrum pharetra. Praesent blandit sodales vehicula. Maecenas egestas ipsum mi, eget tincidunt odio pharetra eu. Aenean in ullamcorper metus, vel tincidunt leo. Sed purus felis, commodo nec mauris et, dictum fringilla arcu. Quisque sed interdum tellus. Fusce sit amet aliquam tortor. Suspendisse placerat ultrices leo, id pellentesque turpis dictum eu. Aliquam erat volutpat.
-                </p></div>
+                </div>
                 <div className='col-5'>
                 <Image
                   src={transLogo}
@@ -71,7 +68,7 @@ Cras luctus quam sed odio volutpat gravida. Fusce sagittis nisi sit amet arcu ru
         <div className="col-md-2"><br /></div>
 
         <div className="col-md-8 my-3 my-md-0 px-2 homeCard">
-          <h3 className={tarrgetFont.className}>Tournament Organizers</h3>
+          <h3 className={tarrgetFont.className}>Tournament Organization</h3>
 
           <div className='container'>
             <div className='row'>
@@ -83,16 +80,8 @@ Cras luctus quam sed odio volutpat gravida. Fusce sagittis nisi sit amet arcu ru
               style={memberStyle}
               quality={100} />
           </div>
-          <div className='col-2'>
-            <h5>Rudy</h5>
-            <Image
-              src={smasher}
-              alt='clueless smash player' 
-              style={memberStyle}
-              quality={100} />
-              </div>
               <div className='col-2'>
-            <h5>Nick</h5>
+            <h5>tax fraud</h5>
             <Image
               src={smasher}
               alt='clueless smash player' 
@@ -161,6 +150,14 @@ Cras luctus quam sed odio volutpat gravida. Fusce sagittis nisi sit amet arcu ru
               alt='clueless smash player' 
               style={memberStyle}
               quality={100} />
+              </div>
+              <div className='col-2'>
+              <h5>Ziggurat</h5>
+            <Image
+              src={smasher}
+              alt='clueless smash player' 
+              style={memberStyle}
+              quality={100} />
           </div>
              
               
@@ -215,14 +212,6 @@ Cras luctus quam sed odio volutpat gravida. Fusce sagittis nisi sit amet arcu ru
               quality={100} />
               </div>
               <div className='col-2'>
-              <h5>tax fraud</h5>
-            <Image
-              src={smasher}
-              alt='clueless smash player' 
-              style={memberStyle}
-              quality={100} />
-              </div>
-              <div className='col-2'>
               <h5>Cockerelking</h5>
             <Image
               src={smasher}
@@ -246,14 +235,7 @@ Cras luctus quam sed odio volutpat gravida. Fusce sagittis nisi sit amet arcu ru
               style={memberStyle}
               quality={100} />
               </div>
-              <div className='col-2'>
-              <h5>Ziggurat</h5>
-            <Image
-              src={smasher}
-              alt='clueless smash player' 
-              style={memberStyle}
-              quality={100} />
-          </div>
+             
 
               </div>  {/*  end of row */}
           </div> {/*  end of container*/}

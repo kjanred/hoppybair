@@ -24,7 +24,6 @@ export default function Friends() {
         <div id="introh1" className="col-md-8 my-3 my-md-0 p-2 text-center homeCard">
           <Image
             src={friendsBanner}
-            style={bannerStyle}
             quality={100}
           />
         
@@ -37,7 +36,7 @@ export default function Friends() {
         <div className="col-md-2"><br /></div>
         <div id="introh1" className="col-md-8 my-3 my-md-0 p-2 text-center homeCard">
           <h2 className={tarrgetFont.className}>with love...</h2>
-          <h6>These are individuals or entities that we appreciate very much</h6>
+          <h6>individuals or entities that have our gratitude</h6>
           <hr className='p-0 mt-0'/>
 
           <div className='container'>

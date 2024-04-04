@@ -48,3 +48,33 @@ font-size:1.3em;
     background: linear-gradient(#e6d8cf, #dfc7b3);
 }
 
+.aboutP {
+    background: linear-gradient( #FFFFFF80, #eaeaea80);
+    padding: 20px; 
+    margin: 10px;
+    font-size: 1.2em;
+}
+
+.question {
+    color: rgb(113, 113, 113); 
+    line-height: 1;
+    display: block;
+    padding:5px;
+    background: linear-gradient(to left, #eaeaea20, #75757520);
+}
+
+.answer {
+    font-size: 1.25em;
+    line-height: 1;
+    display: block;
+    text-align: end;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #eaeaea20, #75757520);
+}    
+
+
+
+.carousel-inner img {
+    margin: auto;
+  }
