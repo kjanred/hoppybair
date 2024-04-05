@@ -16,7 +16,6 @@
 }
 
 nav {
-    /* background: linear-gradient(#0b2d1c80 0%, #263a1e80 25% 75%, #0b2d1c80 100%); */
     background-color: #2bb673a8;
     backdrop-filter: blur(7px);
 
@@ -31,9 +30,6 @@ font-size:1.3em;
     color:black;
 }
 
-.introH1 {
-    font-size: 3.1em;
-}
 
 
 .introP {
@@ -46,6 +42,10 @@ font-size:1.3em;
 
 .homeCard {
     background: linear-gradient(#e6d8cf, #dfc7b3);
+}
+
+.venueCard {
+    padding: 30px;
 }
 
 .aboutP {
@@ -77,4 +77,12 @@ font-size:1.3em;
 
 .carousel-inner img {
     margin: auto;
+    box-shadow: 0px 0px 20px 20px #FFFFFF40;
+  }
+
+  h1.main {
+    background-color: #00000080;
+    color: #2bb673;
+    text-shadow: 0px 0px 4px #000000;
+    font-size: 3em;
   }
