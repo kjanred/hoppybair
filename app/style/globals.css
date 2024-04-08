@@ -105,6 +105,23 @@ font-size:1.3em;
     text-shadow: 0px 0px 4px #000000;
     font-size: 3em;
   }
+  h2.sub {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25); 
+    box-shadow: 0px 20px 20px -10px #00000040;
+    padding: 15px;
+    font-size: 2.25rem;
+    background: linear-gradient(#00000000, #2bb67320);
+    text-shadow: 0 3px 6px #00000040;
+    line-height: .6;
+  }
+
+ 
+  span.tag {
+    color: rgb(71, 71, 71);
+    font-size: 1.2rem;
+    padding-left: 30px;
+    display: inline-block;
+  }
 
 .teamCard {
     padding: 0px;

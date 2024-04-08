@@ -5,7 +5,7 @@ import henHouseSR from '@/public/img/venue/henhouse-sr.jpg';
 
 export default function NextEvent() {
     return (
-        <div className="container">
+        <div className="container p-4">
             <div className="row d-flex align-items-center">
                 <div className="col-12 col-md-6">
                 <h1 className={`${tarrgetFont.className} text-start ps-2`}>Next Event: </h1>

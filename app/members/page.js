@@ -27,7 +27,7 @@ export default function Members() {
     <div className="row g-0 mt-2">
         <div className="col-md-2"><br /></div>
         <div className="col-md-8 my-3 my-md-0 pb-3 homeCard teamCard">
-        <h1 className={`${tarrgetFont.className} ps-2 m-0 text-center main`}>Members</h1>
+        <h1 className={`${tarrgetFont.className} m-0 text-center main`}>Members</h1>
           <div className='container'>
             <div className='row d-flex align-items-center'>
 

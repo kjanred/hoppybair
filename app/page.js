@@ -28,7 +28,7 @@ export default function Home() {
     <>
     <div className="row p-2">
         <div className="col-md-2"><br /></div>
-        <div style={homePanelStyle} className="col-md-8 my-3 my-md-0 p-2 pb-4 text-center homeCard"><h1 className={`${tarrgetFont.className} text-ce ps-2 main`}>Hoppy Bairs</h1>
+        <div style={homePanelStyle} className="col-md-8 my-3 my-md-0 p-2 pb-4 text-center homeCard"><h1 className={`${tarrgetFont.className} text-center main`}>Hoppy Bairs</h1>
           <HomeCarousel />
         
         </div>
@@ -38,7 +38,7 @@ export default function Home() {
     <div className="row p-2">
         <div className="col-md-2"><br /></div>
 
-        <div className="col-md-8 p-5 my-3 my-md-0 homeCard d-flex justify-content-center align-items-center">
+        <div className="col-md-8 my-3 my-md-0 homeCard d-flex justify-content-center align-items-center">
          <NextEvent />
         </div>
         
@@ -49,11 +49,11 @@ export default function Home() {
     <div className="row p-2 links">
         <div className="col-md-2"><br /></div>
         <div className="col-md-8 homeCard">
-
+        <h2 className='sub ps-5'><span className={tarrgetFont.className}>Venues</span><br /><span className='tag'>We are currently holding tournaments at these establishments</span></h2>
           <div className="container">
             <div className="row d-flex justify-content-center">
 
-             <div className="col-12 col-md-4 venueCard">
+              <div className="col-12 col-md-4 venueCard">
                 <Image
                   className='img-fluid'
                   src={henHouseSR}
