@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import HomeCarousel from './components/HomeCarousel';
+import NextEvent from './components/NextEvent';
 import { tarrgetFont } from './font/font';
 import homeBG from '@/public/img/home-bg.jpg';
 import ironOx from '@/public/img/venue-logo/iron-ox.jpg';
@@ -34,17 +35,13 @@ export default function Home() {
         <div className="col-md-2"><br /></div>
     </div>
       
-    <div className="row events p-2">
+    <div className="row p-2">
         <div className="col-md-2"><br /></div>
 
-        <div className="col-md-4 p-5 my-3 my-md-0 homeCard d-flex justify-content-center align-items-center"><p className='nextEvent'>Our next event is: <span className="fs-1">01/03/23 6:00pm</span><br />at <span className="fs-1">Hen House Santa Rosa</span></p> </div>
-        <div className="col-md-4 p-5 my-3 my-md-0 homeCard d-flex justify-content-center align-items-center">
-          <Image
-            src="/img/henhouse.png"
-            height={200}
-            width={300}
-            alt="henhouse logo"
-          /> </div>
+        <div className="col-md-8 p-5 my-3 my-md-0 homeCard d-flex justify-content-center align-items-center">
+         <NextEvent />
+        </div>
+        
         <div className="col-md-2"><br /></div>
       </div>
       
@@ -54,7 +51,7 @@ export default function Home() {
         <div className="col-md-8 homeCard">
 
           <div className="container">
-            <div className="row">
+            <div className="row d-flex justify-content-center">
 
              <div className="col-12 col-md-4 venueCard">
                 <Image
@@ -79,7 +76,8 @@ export default function Home() {
                   className='img-fluid'
                   src={ironOx}
                   alt="Iron Ox Brewing"
-                />
+                  />
+                  
                 <p>3334 Industrial Dr <br />Santa Rosa, CA 95403</p>
               </div>
               <div className="col-12 col-md-4 venueCard">

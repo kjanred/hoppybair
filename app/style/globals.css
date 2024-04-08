@@ -23,11 +23,13 @@ nav {
 
 .nav-link, .nav-link:link, .nav-link:visited, .nav-link:active  {
 color: #f6e9dd;
+text-shadow: 0px 0px 5px #00000040;
 font-size:1.3em;
 }
 
 .nav-link:hover{
     color:black;
+    text-shadow: 0px 0px 5px #00000080;
 }
 
 
@@ -45,14 +47,31 @@ font-size:1.3em;
 }
 
 .venueCard {
+    text-align: center;
     padding: 30px;
+}
+.venueCard img {
+    width: 75%;
+    box-shadow: 0px 0px 20px #00000040;
+
+}
+
+.venueCard p {
+    margin-top: 5px;
+    font-size: 1.25em;
+    line-height: 1.5;
+}
+
+.test {
+    line-height: 0;
 }
 
 .aboutP {
     background: linear-gradient( #FFFFFF80, #eaeaea80);
-    padding: 20px; 
+    padding: 50px; 
     margin: 10px;
-    font-size: 1.2em;
+    line-height: 1.1;
+    font-size: 1.5em;
 }
 
 .question {
@@ -85,4 +104,16 @@ font-size:1.3em;
     color: #2bb673;
     text-shadow: 0px 0px 4px #000000;
     font-size: 3em;
+  }
+
+.teamCard {
+    padding: 0px;
+}
+
+  
+.teamCard h3 {
+    padding-left: 10px;
+    background: linear-gradient(to left, #00000000, #00000040);
+    margin: 0 0 10px 0;
+    text-shadow: 0 0 5px white;
   }
