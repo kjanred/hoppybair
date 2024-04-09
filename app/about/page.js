@@ -56,10 +56,10 @@ export default function About() {
         <div className="col-md-8 my-3 my-md-0 p-0 homeCard">
           <div className='container-fluid'>
             <div className='row'>
-              <div className='col-12 col-md-5'>
+              <div className='col-12 col-md-7'>
               <br /> <br /> <br /> <br /> <br /><br /> <br /> <br /> <br /> <br /><br /> <br /> <br /> <br /> <br />
               </div>
-              <div className='col-12 col-md-7 d-flex align-items-center' style={aboutPanelStyle2}>
+              <div className='col-12 col-md-5 d-flex align-items-center' style={aboutPanelStyle2}>
                 <span className={tarrgetFont.className} style={flairSpan}>EST <br /> 2022 <br/> Santa Rosa, CA</span>
               </div>
             </div>
@@ -72,13 +72,13 @@ export default function About() {
     <div className="row p-2">
         <div className="col-md-2"><br /></div>
 
-        <div className="col-md-8 p-5 my-3 my-md-0 homeCard ">
+        <div className="col-md-8 p-3 my-3 my-md-0 homeCard ">
 
           <div className='container-fluid'>
             <div className='row'>
-              <div className='col-7'>
+              <div className='col-6'>
 <span className='question'>When did you start TOing?</span>
-	<span className='answer'>I hosted my first Tourney in 2017. My first tournament I hosted was called Button Smash for Smash 4.</span>
+	<span className='answer'>I hosted my first Tourney in 2017.It was a Smash 4 tournament called Button Smash.</span>
 
   <span className='question'>Who were some of the community leaders you looked up to when you first started playing/TOing?</span>
 	<span className='answer'>I looked up to Major aka Big Mama (Ian) and Happa (Sam) because they were the ones that showed me how to T.O. and supported my events.</span>
@@ -87,7 +87,7 @@ export default function About() {
 	<span className='answer'>Somewhere between 2016 and 2017. My first craft beer was Fresh Squeezed from Deschutes Brewery. It was on tap and I got it from a place called the Green Lantern in Walla Walla, Washington.</span>
 
   <span className='question'>What are some of your favorite breweries?</span>
-	<span className='answer'>Henhouse brewery, Cooperage brewery, Revision brewery, Laughing Monk and Ghost Town brewery. I got others but these are the first that popped in my head.</span>
+	<span className='answer'>HenHouse Brewery, Cooperage Brewery, Revision Brewery, Laughing Monk and Ghost Town Brewery. I got others but these are the first that popped in my head.</span>
 
   <span className='question'>Where are some of your favorite places to play smash and why?</span>
 	<span className='answer'>I love playing at Barley and Bine in Windsor, CA. The staff is friendly, a huge selection of beer and the community is chill.</span>
@@ -96,11 +96,11 @@ export default function About() {
                 <span className='answer'>HB started April 22, 2022. I always wanted to start an esports team based centered around craft beer. A passion project that I felt I can do because I live in one of the most popular craft beer cities in the world. After my Epicenter days I really did not see any point of hosting anymore. I went from hosting small locals to running a regional in my town. What was there else to do? I was very relieved to know other people stepped up to host. As time went on I felt it be super cool by adding variety to the smash community by hosting squad strike events.  By hosting squad strike events at breweries, it really gives a very approachable and easy going environment that attracts newcomers. Even try hards can relax at my events. I think that's super healthy when you need a break from the grind. It's a win- win situation.</span>
                 </div>
     
-              <div className='col-5'>
+              <div className='col-6'>
           <Image
             src={rudy}
                   alt="Rodlfo 'SR-SOUL' Zarate"
-                  className='img-fluid'
+                  className='img-fluid p-xxl-5'
                 />
                 </div>
               </div>{/* end of row */}

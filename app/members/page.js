@@ -32,7 +32,7 @@ export default function Members() {
             <div className='row d-flex align-items-center'>
 
               
-              <div className='col-6 p-3 text-center'>
+              <div className='col-6 text-center'>
                 <h3><span className={tarrgetFont.className}>Founder:</span> Rodolfo "SR-SOUL" Zarate</h3>
                 
                 <Image
@@ -49,7 +49,6 @@ export default function Members() {
                   quality={100}
                   style={transLogoStyle}
                 />
-          <h6 className='px-2 py-0'>We value being good to each other and the community.</h6>
               </div>
 
 
@@ -64,10 +63,10 @@ export default function Members() {
         <div className="col-md-2"><br /></div>
 
         <div className="col-md-8 my-3 my-md-0 homeCard teamCard">
-          <h3 className={tarrgetFont.className}>Tournament Organization</h3>
+          <h3 className={`${tarrgetFont.className} ltr`}>Tournament Organization</h3>
 
           <div className='container'>
-            <div className='row pb-4'>
+            <div className='row px-5 pb-4'>
           <div className='col-2 memberCard'>
             <h5>Alphie</h5>
             <Image
@@ -99,10 +98,10 @@ export default function Members() {
         <div className="col-md-2"><br /></div>
 
         <div className="col-md-8 my-3 my-md-0 homeCard teamCard">
-          <h3 className={tarrgetFont.className}>Stream</h3>
+          <h3 className={`${tarrgetFont.className} rtl`}>Stream</h3>
 
           <div className='container'>
-            <div className='row pb-4'>
+            <div className='row px-5 pb-4 d-flex justify-content-end'>
           <div className='col-2 memberCard'>
             <h5>Manjoe</h5>
             <Image
@@ -135,10 +134,10 @@ export default function Members() {
         <div className="col-md-2"><br /></div>
 
         <div className="col-md-8 my-3 my-md-0 homeCard teamCard">
-          <h3 className={tarrgetFont.className}>Design</h3>
+          <h3 className={`${tarrgetFont.className} ltr`}>Design</h3>
 
           <div className='container'>
-            <div className='row pb-4'>
+            <div className='row px-5 pb-4'>
           <div className='col-2 memberCard'>
             <h5>shikari</h5>
             <Image
@@ -171,10 +170,10 @@ export default function Members() {
         <div className="col-md-2"><br /></div>
 
         <div className="col-md-8 my-3 my-md-0 homeCard teamCard">
-          <h3 className={tarrgetFont.className}>Players</h3>
+          <h3 className={`${tarrgetFont.className} rtl`}>Players</h3>
 
           <div className='container'>
-            <div className='row pb-4'>
+            <div className='row px-5 pb-4 d-flex justify-content-end'>
           <div className='col-2 memberCard'>
             <h5>Malcolm X</h5>
             <Image

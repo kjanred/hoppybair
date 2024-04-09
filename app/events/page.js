@@ -49,8 +49,8 @@ export default function Events() {
       
       <div className="row p-2">
         <div className="col-md-2"><br /></div>
-        <div className="col-md-8 my-3 my-md-0 p-5 text-center homeCard">
-
+        <div className="col-md-8 my-3 my-md-0 homeCard">
+          <h2 className='sub text-end'><span className={tarrgetFont.className}>Last Tournament</span><br /><span className='tag'>HenHouse: Santa Rosa #3</span></h2>
           <Image
             src={resultsGraphic}
             alt="results graphic"
@@ -63,7 +63,8 @@ export default function Events() {
       
       <div className="row p-2">
         <div className="col-md-2"><br /></div>
-        <div className="col-md-8 my-3 my-md-0 p-5 text-center homeCard">
+        <div className="col-md-8 my-3 my-md-0 homeCard">
+        <h2 className='sub'><span className={tarrgetFont.className} >Results Data </span><br /><span className='tag'>Standings for all past tournaments.</span></h2>
 
         <ResultsAccordian />
           
