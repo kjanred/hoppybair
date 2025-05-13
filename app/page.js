@@ -1,13 +1,11 @@
 import Image from 'next/image'
-import HomeCarousel from './components/HomeCarousel';
+import LogoScroll from './components/LogoScroll';
 import NextEvent from './components/NextEvent';
 import { tarrgetFont } from './font/font';
-import homeBG from '@/public/img/home-bg.jpg';
-import ironOx from '@/public/img/venue-logo/iron-ox.jpg';
-import henHouseSR from '@/public/img/venue-logo/henhouse-sr.jpg';
-import henHouseP from '@/public/img/venue-logo/henhouse-p.jpg';
-import fourLegs from '@/public/img/venue-logo/four-legs.jpg';
-import indianValley from '@/public/img/venue-logo/indian-valley.jpg';
+import logoTrans from '@/public/img/logotrans.png';
+import x from '@/public/img/x.png';
+
+
 
 
 export const metadata = {
@@ -17,7 +15,6 @@ export const metadata = {
 
 const homePanelStyle = {
   boxShadow: '0 0 40px 20px #00000080, inset 0 0 40px 20px #000000BF, inset 0 0 0 1000px #FFFFFF10',
-  backgroundImage: `url(${homeBG.src})`,
   backgroundSize: 'cover'
 }
  
@@ -27,86 +24,49 @@ export default function Home() {
   return (
     <>
     <div className="row p-2">
-        <div className="col-md-2"><br /></div>
-        <div style={homePanelStyle} className="col-md-8 my-3 my-md-0 p-2 pb-4 text-center homeCard"><h1 className={`${tarrgetFont.className} text-center main`}>Hoppy Bairs</h1>
-          <HomeCarousel />
+        <div className="col-md-1"><br /></div>
+        <div className="col-md-10 my-3 p-0 my-md-0 homeCard">
+          <div className="container-fluid">
+            <div className="row">
+              <div className='col-md-8 p-0 welcomeCardColor welcomeCardImg'>
+                <h1 className={`${tarrgetFont.className} main m-0 pe-3 text-center`}>Welcome</h1>
+                <div className='homeParagraph'
+                >We are a grassroots Super Smash Bros Esports orginization based in Sonoma County, California and work closely with local brweries and tap rooms to host free-to-enter Smash Tournaments. Grab your controller and come play some games at one of our next events. All ages and skill levels welcome. Must be 21 or older to purchase alcohol.
+                  <hr />
+                  <div className='clickMe'>
+                  <p className='ms-2 me-auto'>Click here to sign up <br />for our next event!</p>
+                    <svg  className="me-2" width="24" height="24" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.25 20h7.5A1.25 1.25 0 0 0 10 18.75v-7.5A1.25 1.25 0 0 1 11.25 10h27.5A1.25 1.25 0 0 0 40 8.75V1.25A1.25 1.25 0 0 0 38.75 0H10A10 10 0 0 0 0 10v8.75A1.25 1.25 0 0 0 1.25 20Z" fill="#3f80ff"></path><path d="M38.75 20h-7.5A1.25 1.25 0 0 0 30 21.25v7.5A1.25 1.25 0 0 1 28.75 30H1.25A1.25 1.25 0 0 0 0 31.25v7.5A1.25 1.25 0 0 0 1.25 40H30A10 10 0 0 0 40 30V21.25A1.25 1.25 0 0 0 38.75 20Z" fill="#ff2768"></path></svg>
+                    </div>
+
+
+                </div>
+              </div>
+              <div className='col-md-4'>
+                <NextEvent />
+              </div>
+            </div> {/*end of row*/}
+
+          </div>{/*end of container*/}
         
         </div>
-        <div className="col-md-2"><br /></div>
+        <div className="col-md-1"><br /></div>
     </div>
       
     <div className="row p-2">
-        <div className="col-md-2"><br /></div>
+        <div className="col-md-1"><br /></div>
 
-        <div className="col-md-8 my-3 my-md-0 homeCard d-flex justify-content-center align-items-center">
-         <NextEvent />
+       
+       
+        <div className="col-md-5 my-3 my-md-0 homeCard d-flex justify-content-center align-items-center">
+          <Image src={logoTrans} quality={100} alt='hoppy bairs drawn logo' className='home-logo' /><Image src={x} quality={100} alt='x symbol' className='w-md-50' />
+          <LogoScroll /> 
         </div>
-        
-        <div className="col-md-2"><br /></div>
+        <div className='col-md-5 darkCard'></div>
+        <div className="col-md-1"><br /></div>
       </div>
       
 
-    <div className="row p-2 links">
-        <div className="col-md-2"><br /></div>
-        <div className="col-md-8 homeCard">
-        <h2 className='sub ps-5'><span className={tarrgetFont.className}>Venues</span><br /><span className='tag'>We are currently holding tournaments at these establishments</span></h2>
-          <div className="container">
-            <div className="row d-flex justify-content-center">
-
-              <div className="col-12 col-md-4 venueCard">
-                <Image
-                  className='img-fluid'
-                  src={henHouseSR}
-                  alt="HenHouse, Santa Rosa"
-                />
-                <p> 322 Bellevue Ave<br />Santa Rosa, CA 95407</p>
-              </div>
-              
-              <div className="col-12 col-md-4 venueCard">
-                <Image
-                  className='img-fluid'
-                  src={henHouseP}
-                  alt="HenHouse, Petaluma"
-                />
-                <p>1333 N McDowell Blvd <br />Petaluma, CA 94954</p>
-              </div>
-
-              <div className="col-12 col-md-4 venueCard">
-                <Image
-                  className='img-fluid'
-                  src={ironOx}
-                  alt="Iron Ox Brewing"
-                  />
-                  
-                <p>3334 Industrial Dr <br />Santa Rosa, CA 95403</p>
-              </div>
-              <div className="col-12 col-md-4 venueCard">
-                <Image
-                  className='img-fluid'
-                  src={fourLegs}
-                  alt="Four Legs Brewing"
-                />
-                <p>2010 Elkins Way<br />Brentwood, CA 94513</p>
-              </div>
-              <div className="col-12 col-md-4 venueCard">
-                <Image
-                  className='img-fluid'
-                  src={indianValley}
-                  alt="Indian Valley Brewing"
-                />
-                <p>1016 Railroad Ave<br />Novato, CA 94945</p>
-              </div>
-
-
-
-            </div>
-
-          </div>{/*--- END OF VENUE CONTAINER --*/}
-
-
-        </div>
-        <div className="col-md-2"><br /></div>
-      </div>
+   
       
     </>  
   )

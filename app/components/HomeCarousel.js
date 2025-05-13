@@ -5,16 +5,16 @@ import img3 from "@/public/img/homeCarousel/3.jpg";
 
 export default function HomeCarousel() {
     return (
-        <div id="homeCarousel" className="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div id="homeCarousel" className="carousel slide carousel-fade container-fluid" data-bs-ride="carousel">
   <div className="carousel-inner">
     <div className="carousel-item active">
-     <Image src={img1} className="d-block" alt="..." />
+     <Image src={img1} className="d-block img-fluid" alt="..." />
     </div>
     <div className="carousel-item">
-      <Image src={img2} className="d-block" alt="..." />
+      <Image src={img2} className="d-block img-fluid" alt="..." />
     </div>
     <div className="carousel-item">
-      <Image src={img3} className="d-block" alt="..." />
+      <Image src={img3} className="d-block img-fluid" alt="..." />
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">

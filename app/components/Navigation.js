@@ -12,7 +12,7 @@ export default function Navigation() {
                         src={logo}
                         quality={100}
                         alt="logo"
-                      />
+                      /><span className='navFont ps-2'>Hoppy Bairs</span>
           </Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -29,13 +29,10 @@ export default function Navigation() {
                 <a className="nav-link" href="/about">About</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/members">Members</a>
+                <a className="nav-link" href="/team">Team</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/blog">Blog</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/friends">Friends</a>
+                <a className="nav-link" href="/shop">Shop</a>
               </li>
             </ul>
           </div>
