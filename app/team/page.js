@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import smasher from '@/public/img/members/smasher.jpg';
 import transLogo from '@/public/img/logotrans.png';
+import manjoe from '@/public/img/team/manjoe.png';
+import lan from '@/public/img/team/lan.png';
 import { tarrgetFont } from '../font/font';
 import PlayerLoop from '../components/PlayerLoop';
 
@@ -36,10 +38,10 @@ export default function Members() {
           
 
         </div>
-        <div className="col-md-6 homeCard">
+        <div className="col-md-6 darkCard">
 
-          <div className='container TOcontainer'>
-            <div className='row'><div className='col'><h2 className='text-end'>Tournament Organizers</h2></div></div>
+          <div className='container TOcontainer px-0'>
+            <div className='row'><div className='col'><h2 className={`${tarrgetFont.className} text-end subWhite`}>Tournament Organizers</h2></div></div>
             <div className='row justify-content-evenly'>
               <div className='col-md-3 TOcard'><h2 className='TOheader'>SR-SOUL</h2>
               <Image
@@ -75,15 +77,17 @@ export default function Members() {
 
       <div className="row g-0">
         <div className="col-md-1"><br /></div>
-        <div className='col-md-10 streamCard'>
-          <h2 className='text-center'>Stream</h2>
+        <div className='col-md-10 pb-3 darkCard'>
+          <h2 className={`${tarrgetFont.className} subWhite text-center`}>Stream</h2>
           <div className='container'>
             <div className='row justify-content-center'>
             <div className='col-12 col-md-2 streamer'>
-              <h2 className='TOheader'>HB Tournaments</h2>
-                <div className='square'>
+              <h3 className='streamHeader'>HB Tournaments</h3>
+                <div className='square streamContainer mx-auto'>
                   <Image
                     src={transLogo}
+                    width={100}
+                    height={100}
                     quality={100}
                     className='streamLogo'
                     />
@@ -92,10 +96,10 @@ export default function Members() {
               </div>
 
               <div className='col-12 col-md-2 streamer'>
-              <h2 className='TOheader'>Manjoe</h2>
-                <div className='square'>
+              <h3 className='streamHeader'>Manjoe</h3>
+                <div className='square streamContainer mx-auto'>
                   <Image
-                    src={transLogo}
+                    src={manjoe}
                     quality={100}
                     className='streamLogo'
                     />
@@ -104,10 +108,10 @@ export default function Members() {
               </div>
 
               <div className='col-12 col-md-2 streamer'>
-              <h2 className='TOheader'>Jemrock</h2>
-                <div className='square'>
+              <h3 className='streamHeader'>LAN</h3>
+                <div className='square streamContainer mx-auto'>
                   <Image
-                    src={transLogo}
+                    src={lan}
                     quality={100}
                     className='streamLogo'
                     />
@@ -122,8 +126,8 @@ export default function Members() {
       
       <div className="row g-0">
         <div className="col-md-1"><br /></div>
-        <div className='col col-md-10 streamCard'>
-          <h2 className='text-center'>Players</h2>
+        <div className='col col-md-10 darkCard'>
+          <h2 className={`${tarrgetFont.className} subWhite text-center`}>Players</h2>
           <div className='container'>
             <div className='row d-flex justify-content-center'>
              

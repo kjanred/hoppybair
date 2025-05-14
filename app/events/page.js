@@ -14,7 +14,6 @@ export const metadata = {
 
 export default function Events() {
 
-  const array = {}
 
   return (
     <>
@@ -22,14 +21,14 @@ export default function Events() {
       <div className="row p-2">
       <h1 className={`${tarrgetFont.className} m-0 text-center main`}>Events</h1>
         <div className="col-md-1"><br /></div>
-        <div className='col-4 homeCard'>
+        <div className="col-md-4 homeCard">
           <NextEvent />
         </div>
-        <div className="col-md-6 p-0 d-flex align-items-center darkCard">
-        
+        <div className="col-md-6 p-0 darkCard">
+        <h2 className={`${tarrgetFont.className} subWhite text-end`}>Last Event</h2>
 
         <Image
-                  className='mx-auto resultsGraphic'
+                  className='mx-auto img-fluid'
             src={resultsGraphic}
             alt="results graphic"
                 />
@@ -42,9 +41,9 @@ export default function Events() {
     <div className="row p-2">
         <div className="col-md-1"><br /></div>
 
-        <div className="col-md-10 my-3 my-md-0 homeCard text-center">
-          <h2 className='sub'><span className={tarrgetFont.className} >Monthly Schedule </span></h2>
-         <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FLondon&showPrint=0&showNav=0&showTabs=0&showCalendars=0&showTz=0&title=Tournament%20Schedule&src=ODg5ZDhkZTY1ZTc1NzNkZmE4Yzc4YTVmMTM3MzVlMTYzMjU5MWE4NzUyMGQ2ZmQwYmRlOTZlMjcxZjEzYTQ5YUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23616161" className='calendar' width="700" height="500" frameborder="0"></iframe>
+        <div className="col-md-10 my-3 my-md-0 darkCard text-center">
+          <h2 className='subWhite'><span className={tarrgetFont.className} >Monthly Schedule </span></h2>
+         <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FLondon&showPrint=0&showNav=0&showTabs=0&showCalendars=0&showTz=0&title=Tournament%20Schedule&src=ODg5ZDhkZTY1ZTc1NzNkZmE4Yzc4YTVmMTM3MzVlMTYzMjU5MWE4NzUyMGQ2ZmQwYmRlOTZlMjcxZjEzYTQ5YUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23616161" className='calendar' width="700" height="500"></iframe>
               
                 
         
