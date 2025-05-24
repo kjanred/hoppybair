@@ -5,6 +5,7 @@ import manjoe from '@/public/img/team/manjoe.png';
 import lan from '@/public/img/team/lan.png';
 import { tarrgetFont } from '../font/font';
 import PlayerLoop from '../components/PlayerLoop';
+import StreamLoop from '../components/StreamLoop';
 
 
 export const metadata = {
@@ -81,43 +82,9 @@ export default function Members() {
           <h2 className={`${tarrgetFont.className} subWhite text-center`}>Stream</h2>
           <div className='container'>
             <div className='row justify-content-center'>
-            <div className='col-12 col-md-2 streamer'>
-              <h3 className='streamHeader'>HB Tournaments</h3>
-                <div className='square streamContainer mx-auto'>
-                  <Image
-                    src={transLogo}
-                    width={100}
-                    height={100}
-                    quality={100}
-                    className='streamLogo'
-                    />
+              
+              <StreamLoop />
 
-              </div> 
-              </div>
-
-              <div className='col-12 col-md-2 streamer'>
-              <h3 className='streamHeader'>Manjoe</h3>
-                <div className='square streamContainer mx-auto'>
-                  <Image
-                    src={manjoe}
-                    quality={100}
-                    className='streamLogo'
-                    />
-
-              </div> 
-              </div>
-
-              <div className='col-12 col-md-2 streamer'>
-              <h3 className='streamHeader'>LAN</h3>
-                <div className='square streamContainer mx-auto'>
-                  <Image
-                    src={lan}
-                    quality={100}
-                    className='streamLogo'
-                    />
-
-              </div> 
-              </div>
             </div>
           </div>
         </div>

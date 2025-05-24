@@ -57,11 +57,10 @@ export default function Home() {
 
        
        
-        <div className="col-md-5 my-3 my-md-0 homeCard d-flex justify-content-center align-items-center">
+        <div className="col my-3 my-md-0 homeCard d-flex justify-content-center align-items-center">
           <Image src={logoTrans} quality={100} alt='hoppy bairs drawn logo' className='home-logo' /><Image src={x} quality={100} alt='x symbol' className='w-md-50' />
           <LogoScroll /> 
         </div>
-        <div className='col-md-5 darkCard'></div>
         <div className="col-md-1"><br /></div>
       </div>
       
