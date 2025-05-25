@@ -1,8 +1,10 @@
 import styles from '../style/footer.module.css'
 import Link from 'next/link';
+import { useAuth } from '../context/AuthContext';
 import Image from 'next/image';
 
 export default function Footer() {
+    const { googleSignIn, logOut, currentUser } = useAuth();
     return (
         <footer className={`${styles.footer} row footer p-3`}>
 
@@ -65,7 +67,9 @@ export default function Footer() {
                 <div className='row'><div className='col'><hr /></div></div>
                 <div className='row mx-3'>
                     
-                    <div className='col-12 col-md-6'><p className={styles.p}>&copy; &trade; Hoppy Bairs</p></div>
+                    <div className='col-12 col-md-6'><p className={styles.p}>&copy; &trade; Hoppy Bairs | {!currentUser && (<button onClick={googleSignIn}>Sign In</button> )} | {currentUser && (
+                        <p>Welcome, {currentUser.displayName}! <button onClick={logOut}>Sign Out</button></p> 
+      )} </p></div>
                     <div className='col-12 col-md-6 text-end'><p className={styles.p}> Founded by Rodolfo | Website by Karl</p></div>
 
                 </div></div>

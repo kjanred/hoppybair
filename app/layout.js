@@ -9,6 +9,7 @@ import BootstrapClient from './components/BootstrapClient';
 import { coolveticaFont } from './font/font';
 import { usePathname } from 'next/navigation';
 import heroimg from '@/public/img/hero.jpg'
+import { AuthProvider } from './context/AuthContext';
 
 export default function RootLayout({ children }) {
 
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${coolveticaFont.className}`}>
+        <AuthProvider>
         <div className="container-fluid p-0 main-container">
           {pathname === '/' && (
             <div className='row'>
@@ -39,7 +41,9 @@ export default function RootLayout({ children }) {
       <Footer />
     
       </div>
-      <BootstrapClient />
+        <BootstrapClient />
+        
+      </AuthProvider>
       </body>
     </html>
   )
