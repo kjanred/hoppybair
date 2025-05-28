@@ -31,9 +31,35 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  const checkUser = async (user) => {
+    if (!user) {
+      setIsAuthorized(false);
+      return;
+    }
+
+
+    try {
+      const userDocRef = doc(db, "authorizedUsers", user.uid);
+      const userDocSnap = await getDoc(userDocRef);
+
+      if (userDocSnap.exists()) {
+        setIsAuthorized(true);
+        console.log("docsnap is true");
+      } else {
+        setIsAuthorized(false);
+        console.log("docsnap is false");
+        await signOut(auth);
+      }
+    } catch (error) {
+      console.error("Error checking authorization:", error);
+      setIsAuthorized(false);
+    }
+  };
+
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       setCurrentUser(user);
+      await checkUser(user);
       setLoading(false);
     });
     return () => unsubscribe();
@@ -42,7 +68,8 @@ export const AuthProvider = ({ children }) => {
   const value = {
     googleSignIn,
     logOut,
-    currentUser
+    currentUser,
+    isAuthorized
   }
 
 

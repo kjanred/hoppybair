@@ -2,19 +2,35 @@
     background-color: rgb(7, 30, 18);
     background-image: url('/img/bg2.jpg');
 }
-.homeParagraph {
+.homeParagraphBox {
     font-size: 1.5em;
     color: rgb(224, 224, 224);
     padding: 1em;
-    background-color: #0000007a;
-    
+    background-color: #00000090;
+}
+
+ .homeBottomTextCard p {
+  padding: .5em 3em; 
+
+ }
+
+.subtext {
+  font-size: .75em;
+  line-height: 1;
+  text-align: right;
+  padding-left: 2em;
 }
 
 .welcomeCardImg {  
-  background-image: url('/img/homebg.png'), linear-gradient(rgb(67, 67, 67), rgb(30, 30, 30));
-  background-position: right center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background: url(/img/homebg.png) right center no-repeat, linear-gradient(rgb(67, 67, 67), rgb(30, 30, 30));
+  background-size:contain;
+}
+
+@media only screen and (min-width: 768px) {
+.welcomeCardImg {  
+  background:url(/img/smashbg.png) left top no-repeat, url(/img/homebg.png) right center no-repeat, linear-gradient(rgb(67, 67, 67), rgb(30, 30, 30));
+  background-size: 400px, contain;
+}
 }
 
 .clickMe {
@@ -36,12 +52,20 @@
 
 
 @media only screen and (min-width: 768px) {
-  .homeParagraph {
-    margin: 10px 250px 10px 50px;
-    padding:.5em;
+  .homeParagraphBox {
+    margin: 1em;
+    margin-right: 5em;
+    padding:1em;
   }
 }
 
+@media only screen and (min-width: 2000px) {
+  .homeParagraphBox {
+    margin: 2em 6em;
+    padding:2.5em 5em;
+    font-size: 1.75em;
+  }
+}
 
 .heroIMG {
     object-fit: cover;
@@ -190,7 +214,23 @@ h2.subWhite {
     padding:0px 30px 0px 30px;
     display: inline-block;
   }
+ .logoContainer {
+  background-color:#2bb673;
+  }
+  
 
+    @media only screen and (min-width: 768px) {
+      .logoContainer {
+  background-color: transparent;
+  background-image: url('/img/logosbg.png'), linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-top: #ffffff2a 1px solid;
+  border-bottom: #ffffff2a 1px solid;
+  }
+ 
+}
 
   .scroll-container {
     width: 150px;

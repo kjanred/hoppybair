@@ -23,15 +23,14 @@ export default function Home() {
 
   return (
     <>
-    <div className="row p-2">
+    <div className="row px-2">
         <div className="col-md-1"><br /></div>
         <div className="col-md-10 my-3 p-0 my-md-0 homeCard">
           <div className="container-fluid">
             <div className="row">
               <div className='col-md-8 p-0 welcomeCardColor welcomeCardImg'>
                 <h1 className={`${tarrgetFont.className} main m-0 pe-3 text-center`}>Welcome</h1>
-                <div className='homeParagraph'
-                >We are a grassroots Super Smash Bros Esports orginization based in Sonoma County, California and work closely with local brweries and tap rooms to host free-to-enter Smash Tournaments. Grab your controller and come play some games at one of our next events. All ages and skill levels welcome. Must be 21 or older to purchase alcohol.
+                <div className='homeParagraphBox'><p>We are a grassroots Super Smash Bros Ultimate Esports orginization based in Sonoma County, California and work closely with local brweries and tap rooms to host free-to-enter Smash Tournaments. Grab your controller and come play some games at one of our next events. </p><p className='subtext'>All ages and skill levels are welcome to enter and play. Must be 21 or older to purchase and/or consume alcohol.</p>
                   <hr />
                   <div className='clickMe'>
                   <p className='ms-2 me-auto'>Click here to sign up <br />for our next event!</p>
@@ -57,9 +56,26 @@ export default function Home() {
 
        
        
-        <div className="col my-3 my-md-0 homeCard d-flex justify-content-center align-items-center">
-          <Image src={logoTrans} quality={100} alt='hoppy bairs drawn logo' className='home-logo' /><Image src={x} quality={100} alt='x symbol' className='w-md-50' />
-          <LogoScroll /> 
+        <div className="col my-3 my-md-0 d-flex justify-content-center align-items-center logoContainer">
+         
+          <Image src={logoTrans} quality={100} alt='hoppy bairs drawn logo' className='home-logo' /><Image src={x} quality={100} alt='x symbol' className='w-md-50 me-2 img-fluid' />
+
+            <LogoScroll /> 
+            
+        </div>
+        <div className="col-md-1"><br /></div>
+      </div>
+
+      <div className="row px-2">
+        <div className="col-md-1"><br /></div>
+
+       
+       
+        <div className="col homeCard homeBottomTextCard d-flex justify-content-between">
+          <p>At our events, we welcome players of all kinds. Just make sure to bring your own controller! </p>
+          <p>See you soon! </p>
+         
+        
         </div>
         <div className="col-md-1"><br /></div>
       </div>

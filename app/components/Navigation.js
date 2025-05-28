@@ -26,13 +26,13 @@ export default function Navigation() {
                 <Link className="nav-link" href="/events">Events</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/about">About</a>
+                <Link className="nav-link" href="/about">About</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/team">Team</a>
+                <Link className="nav-link" href="/team">Team</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/shop">Shop</a>
+                <Link className="nav-link" href="/shop">Shop</Link>
               </li>
             </ul>
           </div>

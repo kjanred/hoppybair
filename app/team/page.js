@@ -34,7 +34,7 @@ export default function Members() {
         <div className="col-md-1"><br /></div>
 
         <div className="col-md-4 darkCard">
-        <p className='teamParagraph m-4'>Our team consists of a group of Smash players in the Sonoma County area who share a love for craft beer and Super Smash Bros. </p>
+        <p className='teamParagraph m-4'>Our team consists of a group of Smash players in the Sonoma County area who share a love for craft beer and Super Smash Bros. If you have questions abotu an upcoming event you can reach out to us here or get in touch with one of our Tournament Organizers. Please also check out our memeber's various streams on Twitch. We also are in the process of uploading VODs to youtube. </p>
 
           
 
