@@ -18,13 +18,19 @@ export default function Events() {
   return (
     <>
      
-      <div className="row p-2">
+      <div className="row">
       <h1 className={`${tarrgetFont.className} m-0 text-center main`}>Events</h1>
         <div className="col-md-1"><br /></div>
-        <div className="col-md-4 homeCard">
+        <div className="col-md-10 p-0">
           <NextEvent />
         </div>
-        <div className="col-md-6 p-0 darkCard">
+      
+        <div className="col-md-1"><br /></div>
+      </div>
+      
+      <div className='row'>
+        <div className='col-md-1'><br /></div>
+         <div className="col-md-10 p-0 darkCard">
         <h2 className={`${tarrgetFont.className} subWhite text-end`}>Last Event</h2>
 
         <Image
@@ -34,9 +40,8 @@ export default function Events() {
                 />
 
         </div>
-      
-        <div className="col-md-1"><br /></div>
-    </div>
+        <div className='col-md-1'><br /></div>
+      </div>
       
     <div className="row p-2">
         <div className="col-md-1"><br /></div>

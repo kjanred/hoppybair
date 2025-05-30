@@ -1,6 +1,7 @@
 'use client'
 
 import './style/globals.css';
+import './style/sizefix.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Image from 'next/image';
 import Navigation from './components/Navigation';

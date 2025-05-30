@@ -1,6 +1,6 @@
 .main-container{
     background-color: rgb(7, 30, 18);
-    background-image: url('/img/bg2.jpg');
+    background-image: url('/img/bg6.jpg');
 }
 .homeParagraphBox {
     font-size: 1.5em;
@@ -378,10 +378,72 @@ h2.subWhite {
 }
 
 .eventTitle {
-  font-size: 1.5em;
+  font-size: 1.75em;
 }
 
 .carouselStyle {
   background: linear-gradient( rgb(50, 50, 50), rgb(18, 18, 18));
 }
 
+.rulesTable {
+  font-size: 1.3em;
+}
+
+.rulesTable td {
+  text-align: right;
+}
+
+.rulesTable tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.ruleHeader {
+  border-image: linear-gradient(to right, rgba(128, 128, 128, 0), rgba(255, 255, 255, 0.9), rgba(128, 128, 128, 0)) 1 / 0px 0px 1px 0px;
+  text-align: center;
+}
+
+.rulesCol h3{
+text-align: center;
+font-size:1.5em;
+}
+
+.rulesCol h4 {
+  text-align: center;
+font-size:.9em;
+}
+
+.rulesBox {
+  background-image: url('/img/rulesbg.jpg');
+  background-color: rgba(255, 255, 255, 0.25);
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: rgba(255, 255, 255, 0.4) 0px 10px 40px 0px;
+}
+
+
+@media only screen and (min-width: 2000px) {
+ .rulesCol img {
+  width: 70%;
+  height: auto;
+}
+}
+
+ .stageRulesButton {
+ background-color: transparent !important;
+ }
+
+ .nextEventContainer {
+  color:  rgb(235, 234, 234);
+  height: 100%;
+ }
+
+ .rulesBox {
+  color: black;
+ }
+
+ .eventParagraph {
+  line-height: 1;
+  margin: 1em;
+  font-size: 1.2em;
+ }

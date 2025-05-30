@@ -29,8 +29,8 @@ export default function Home() {
           <div className="container-fluid">
             <div className="row">
               <div className='col-md-8 p-0 welcomeCardColor welcomeCardImg'>
-                <h1 className={`${tarrgetFont.className} main m-0 pe-3 text-center`}>Welcome</h1>
-                <div className='homeParagraphBox'><p>We are a grassroots Super Smash Bros Ultimate Esports orginization based in Sonoma County, California and work closely with local brweries and tap rooms to host free-to-enter Smash Tournaments. Grab your controller and come play some games at one of our next events. </p><p className='subtext'>All ages and skill levels are welcome to enter and play. Must be 21 or older to purchase and/or consume alcohol.</p>
+                <h1 className={`${tarrgetFont.className} main m-0 pe-md-3 text-center`}>Welcome</h1>
+                <div className='homeParagraphBox'><p>We are a grassroots Nintendo Switch Super Smash Bros Ultimate Esports orginization based in Sonoma County, California and work closely with local breweries and tap rooms. We hold Free-To-Enter tournaments at these establishments, we bring the equipment, and there are prizes for the winner! Just be sure to bring your own controller. So come play some Super Smash Bros at one of our next events! </p><p className='subtext'>All ages and skill levels are welcome to enter and play. Must be 21 or older to purchase and/or consume alcohol.</p>
                   <hr />
                   <div className='clickMe'>
                   <p className='ms-2 me-auto'>Click here to sign up <br />for our next event!</p>
@@ -40,7 +40,7 @@ export default function Home() {
 
                 </div>
               </div>
-              <div className='col-md-4'>
+              <div className='col-md-4 p-0'>
                 <NextEvent />
               </div>
             </div> {/*end of row*/}
@@ -58,7 +58,7 @@ export default function Home() {
        
         <div className="col my-3 my-md-0 d-flex justify-content-center align-items-center logoContainer">
          
-          <Image src={logoTrans} quality={100} alt='hoppy bairs drawn logo' className='home-logo' /><Image src={x} quality={100} alt='x symbol' className='w-md-50 me-2 img-fluid' />
+          <Image src={logoTrans} quality={100} alt='hoppy bairs drawn logo' className='home-logo' /><Image src={x} quality={100} alt='x symbol' className='me-2' />
 
             <LogoScroll /> 
             
