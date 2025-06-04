@@ -4,9 +4,14 @@ import { useAuth } from '../context/AuthContext';
 import Image from 'next/image';
 
 export default function Footer() {
-    const { googleSignIn, logOut, currentUser, isAdminUser } = useAuth();
+    const { googleSignIn, logOut, currentUser, isAdminUser, loading } = useAuth();
+    
+    if (loading) {
+    return <div>loading...</div>;
+  }
     return (
         <footer className={`${styles.footer} row footer p-3`}>
+            
 
             <div className='container'><div className='row'>
             <div className='col-1'><br /></div>
@@ -68,7 +73,7 @@ export default function Footer() {
                 <div className='row mx-3'>
                     
                     <div className='col-12 col-md-6'><p className={styles.p}>&copy; &trade; Hoppy Bairs | {!currentUser && (<button onClick={googleSignIn}>Sign In</button> )} | {currentUser && (
-                        <div>Welcome, {currentUser.displayName}! <button onClick={logOut}>Sign Out </button>{isAdminUser && (<span>OK!</span>)}</div> 
+                        <div>Welcome, {currentUser.displayName}! <button onClick={logOut}>Sign Out </button>{isAdminUser && (<Link href='/dashboard'> To Dash</Link>)}</div> 
       )} </p></div>
                     <div className='col-12 col-md-6 text-end'><p className={styles.p}> Founded by Rodolfo | Website by Karl</p></div>
 
