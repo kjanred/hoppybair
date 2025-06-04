@@ -19,7 +19,19 @@ const aboutPanelStyle = {
 const aboutPanelStyle2 = {
   boxShadow: 'inset 0 0 0 1000px #FFFFFF40',
   backgroundImage: `url(${aboutBG2.src})`,
-  backgroundSize: 'cover'
+  backgroundSize: 'contain',
+  position: 'relative'
+}
+
+const square = {
+  paddingBottom: '100%',
+  overflow: 'hidden',
+  objectFit: 'contain',
+  position: 'absolute',
+  top: '0',
+  left: '0',
+  width: '100%',
+  height: '100%'
 }
 
 const flairSpan = {
@@ -28,11 +40,6 @@ const flairSpan = {
   textShadow: '0 0 10px #000000',
   fontSize: '2em',
   textAlign: 'center'
-}
-
-
-const contain = {
-  objectFit: 'contain'
 }
  
 export default function About() {
@@ -43,7 +50,9 @@ export default function About() {
         <h1 className={`${tarrgetFont.className} text-center main`}>About</h1>
         <div className="col-md-1"><br /></div>
         <div className="col-md-4 py-5 py-md-0 my-md-0 text-center d-flex align-items-center" style={aboutPanelStyle2}>
-        <span className={tarrgetFont.className} style={flairSpan}>EST <br /> 2022 <br/> Santa Rosa, CA</span>
+          <div style={square}>
+            <div className={tarrgetFont.className} style={flairSpan}>EST <br /> 2022 <br /> Santa Rosa, CA</div>
+            </div>
         </div>
         <div className="col-md-6 my-md-0 px-md-5 homeCard">
           <p className="aboutP p-2 p-md-4 mx-md-5">
