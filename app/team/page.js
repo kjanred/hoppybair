@@ -1,8 +1,5 @@
 import Image from 'next/image';
 import smasher from '@/public/img/members/smasher.jpg';
-import transLogo from '@/public/img/logotrans.png';
-import manjoe from '@/public/img/team/manjoe.png';
-import lan from '@/public/img/team/lan.png';
 import { tarrgetFont } from '../font/font';
 import PlayerLoop from '../components/PlayerLoop';
 import StreamLoop from '../components/StreamLoop';

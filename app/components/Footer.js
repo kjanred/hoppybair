@@ -72,10 +72,10 @@ export default function Footer() {
                 <div className='row'><div className='col'><hr /></div></div>
                 <div className='row mx-3'>
                     
-                    <div className='col-12 col-md-6'><p className={styles.p}>&copy; &trade; Hoppy Bairs | {!currentUser && (<button onClick={googleSignIn}>Sign In</button> )} | {currentUser && (
-                        <div>Welcome, {currentUser.displayName}! <button onClick={logOut}>Sign Out </button>{isAdminUser && (<Link href='/dashboard'> To Dash</Link>)}</div> 
-      )} </p></div>
-                    <div className='col-12 col-md-6 text-end'><p className={styles.p}> Founded by Rodolfo | Website by Karl</p></div>
+                    <div className='col-12 col-md-6'>{!currentUser && (<p className={styles.p}><button onClick={googleSignIn}>Sign In</button> </p>)} {isAdminUser && (
+                        <p className={styles.p}>Welcome, {currentUser.displayName}! <button onClick={logOut}>Sign Out </button><Link href='/dashboard'> <button >To Dash</button></Link></p>
+      )} </div>
+                    <div className='col-12 col-md-6 text-end'><p className={styles.p}> &copy; &trade; Hoppy Bairs | Founded by Rodolfo | Website by Karl</p></div>
 
                 </div></div>
             
